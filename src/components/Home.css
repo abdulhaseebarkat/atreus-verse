@@ -1,0 +1,207 @@
+.home-screen {
+  padding-top: 80px;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  animation: float 6s ease-in-out infinite;
+}
+
+.text-content {
+  position: relative;
+  z-index: 2;
+}
+
+.content-wrapper {
+  padding: 2rem;
+  backdrop-filter: blur(2px);
+}
+
+/* Text Styles */
+.font-big {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.animate-charcter {
+  background-image: linear-gradient(
+    -225deg,
+    #0ff 0%,
+    #0af 29%,
+    #08f 67%,
+    #0ff 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+}
+
+.neon-text {
+  color: #0ff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+  font-size: 1.25rem;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes textclip {
+  to { background-position: 200% center; }
+}
+
+/* Features Section */
+.features-section {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 4rem 0;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  background: rgba(0, 255, 255, 0.05);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #0ff;
+  margin-bottom: 1rem;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  background: linear-gradient(45deg, #001219, #003d4d);
+  padding: 4rem 0;
+}
+
+.newsletter-icon {
+  font-size: 3rem;
+  color: #0ff;
+  animation: float 3s ease-in-out infinite;
+}
+
+.newsletter-form .form-control {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #0ff;
+  color: white;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 1rem;
+}
+
+/* Additional Section */
+.additional-section {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.stats-card {
+  background: rgba(0, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.stats-number {
+  font-size: 2.5rem;
+  color: #0ff;
+  font-weight: bold;
+}
+
+/* Countdown */
+.countdown-box {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #0ff;
+  max-width: 400px;
+}
+
+.countdown-item {
+  text-align: center;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 255, 255, 0.1);
+  border-radius: 8px;
+  flex: 1;
+}
+
+.countdown-item div {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0ff;
+}
+
+/* Buttons */
+.explore-btn {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  background: linear-gradient(45deg, #0af, #08f);
+  border: none;
+}
+
+.explore-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.btn-outline-primary {
+  background: transparent;
+  border: 2px solid #0ff;
+  color: #0ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    background-attachment: scroll;
+  }
+  
+  .font-big {
+    font-size: 2.5rem;
+  }
+  
+  .content-wrapper {
+    padding: 1rem;
+  }
+
+  .countdown-item div {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .font-big {
+    font-size: 2rem;
+  }
+  
+  .explore-btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
