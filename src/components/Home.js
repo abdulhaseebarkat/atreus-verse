@@ -1,37 +1,3 @@
-// import React, { Fragment } from 'react'
-
-// function Home() {
-//   return (
-//     <Fragment>
-//         <div className="col py-3 d-flex align-items-center"> 
-
-//             <div className="container">
-
-//               <div className="row">
-
-//                 <div className="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center">
-//                   <div>
-//                     <h1 className="m-0 font-big slide-in-top">Welcome,</h1>
-//                     <h1 className="m-0 font-big animate-charcter">To The Atreus-Verse,</h1>
-//                     <p className="ls-2 mt-2 slide-in-bottom">First Issue Will Be LIVE SOON!</p>
-//                   </div>
-//                 </div>
-
-//                 <div className="col-lg-6 col-md-12 col-sm-12">
-//                   <img className="img-fluid" src="../images/nomad-bro.png" alt="..."></img>
-//                 </div>
-
-//               </div>
-
-//             </div>
-            
-//         </div>
-//     </Fragment>
-//   )
-// }
-
-// export default Home
-
 import React from 'react';
 import './Home.css';
 import { GiSpinningSword, GiRank3, GiTrophy } from 'react-icons/gi';
@@ -57,7 +23,8 @@ function Home() {
               <h1 className="font-big slide-in-top">Welcome Everybody,</h1>
               <h1 className="font-big animate-charcter">to the Atreus-Verse</h1>
               <p className="lead-text slide-in-bottom neon-text">
-                Home to Brandon's Own Characters!
+                Home to Artimis's Own Characters <br></br>
+                This site is the site of the gaming channel for Artimis Atreus
               </p>
               
               <div className="d-flex gap-3 mt-4">

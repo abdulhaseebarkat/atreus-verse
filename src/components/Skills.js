@@ -1,74 +1,3 @@
-// import React, { Fragment } from 'react'
-// import {SiJavascript,SiMicrosoftsqlserver,SiNodedotjs,SiDotnet,SiReact,SiHtml5,SiCss3,SiBootstrap,SiCsharp,SiMongodb,SiExpress,SiPug} from 'react-icons/si'
-// function Skills() {
-//   return (
-//     <Fragment>
-//         <div className="col py-3 d-flex align-items-center"> 
-//             <div className="container">
-//                 <div className="row">
-//                     <div className="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center">
-//                         <div>
-//                             <h1 className="font-big text-red slide-in-top">Still To Come!</h1>
-//                             <hr></hr>
-
-//                             <div className="row my-2">
-
-//                                 {/* <div className='mx-2 my-3 border rounded py-1 px-2 mw-fc'>
-//                                     <span><SiJavascript className='fs-4'/> JavaScript</span>
-//                                 </div>
-//                                 <div className='mx-2 my-3 border rounded py-1 px-2 mw-fc'>
-//                                     <span><SiMicrosoftsqlserver className='fs-4'/> Microsoft SQL Server</span>
-//                                 </div>
-//                                 <div className='mx-2 my-3 border rounded py-1 px-2 mw-fc'>
-//                                     <span><SiNodedotjs className='fs-4'/> Node.js</span>
-//                                 </div>
-//                                 <div className='mx-2 my-3 border rounded py-1 px-2 mw-fc'>
-//                                     <span><SiDotnet className='fs-4'/> ASP.NET Core</span>
-//                                 </div>
-//                                 <div className='mx-2 my-3 border rounded py-1 px-2 mw-fc'>
-//                                     <span><SiReact className='fs-4'/> React</span>
-//                                 </div>
-//                                 <div className='mx-2 my-3 border rounded py-1 px-2 mw-fc'>
-//                                     <span><SiHtml5 className='fs-4'/> Html</span>
-//                                 </div>
-//                                 <div className='mx-2 my-3 border rounded py-1 px-2 mw-fc'>
-//                                     <span><SiCss3 className='fs-4'/> Css</span>
-//                                 </div>
-//                                 <div className='mx-2 my-3 border rounded py-1 px-2 mw-fc'>
-//                                     <span><SiBootstrap className='fs-4'/> Bootstrap</span>
-//                                 </div>
-//                                 <div className='mx-2 my-3 border rounded py-1 px-2 mw-fc'>
-//                                     <span><SiCsharp className='fs-4'/> C#</span>
-//                                 </div>
-//                                 <div className='mx-2 my-3 border rounded py-1 px-2 mw-fc'>
-//                                     <span><SiMongodb className='fs-4'/> MongoDB</span>
-//                                 </div>
-//                                 <div className='mx-2 my-3 border rounded py-1 px-2 mw-fc'>
-//                                     <span><SiExpress className='fs-4'/> Express</span>
-//                                 </div>
-//                                 <div className='mx-2 my-3 border rounded py-1 px-2 mw-fc'>
-//                                     <span><SiPug className='fs-4'/> Pug</span>
-//                                 </div> */}
-                                
-//                             </div>
-
-                            
-//                         </div>
-//                     </div>
-//                     <div className="col-lg-6 col-md-12 col-sm-12">
-//                         <img className="img-fluid" src="../images/Development-pana.png" alt="..."></img>
-//                     </div>
-//                 </div>
-//             </div>
-            
-//         </div>
-//     </Fragment>
-//   )
-// }
-
-// export default Skills
-
-
 import React, { Fragment } from 'react';
 import './About.css'; // Reuse About.css styles
 import CharacterCard from './CharacterCard';
@@ -125,7 +54,7 @@ function Skills() {
         {/* Character Grid Section */}
         <div className="container-fluid pillars-section py-5">
           <div className="container">
-            <h2 className="section-title text-center mb-5 slide-in-bottom">Featured Characters</h2>
+            <h2 className="section-title text-center mb-5 slide-in-bottom">The main Characters and Videos of Artimis Atreus</h2>
             <div className="row g-4">
               {characters.map((character, index) => (
                 <div className="col-md-6 col-lg-4" key={index}>
@@ -136,6 +65,107 @@ function Skills() {
           </div>
         </div>
 
+        {/* YouTube Videos Section */}
+<div className="container-fluid pillars-section py-5">
+  <div className="container">
+    <h2 className="section-title text-center mb-5 slide-in-bottom">Check out Artimis' Atreus Youtube Channel</h2>
+    <div className="row g-4">
+      {[
+        {
+          title: "World Building Masterclass",
+          url: "https://youtu.be/0wuN9rGI-Qw?si=DBhIcNQ7kF8fGCH_",
+          thumbnail: "video1-thumb.png",
+          description: "Discover the secrets behind our universe's creation"
+        },
+        {
+          title: "Character Design Deep Dive",
+          url: "https://youtu.be/0wuN9rGI-Qw?si=kiK3ZjPi7y1NY7u_",
+          thumbnail: "video1-thumb.png",
+          description: "From sketch to final render - full process"
+        },
+        {
+          title: "Epic Battles & Magic",
+          url: "https://youtu.be/-fwMEA_JAro?si=aT0xBk6ssIbZEOsT",
+          thumbnail: "video1-thumb.png",
+          description: "Witness the clash of titans and the birth of legends",
+        }
+        // Add more video objects
+      ].map((video, index) => (
+        <div className="col-md-6 col-lg-4" key={index}>
+          <div className="video-card pillar-card">
+            <a href={video.url} target="_blank" rel="noopener noreferrer" className="video-link">
+              <div className="video-thumbnail">
+                <img 
+                  src={`../images/${video.thumbnail}`} 
+                  alt={video.title}
+                  className="img-fluid"
+                />
+                <div className="play-overlay">
+                  <i className="fas fa-play play-icon"></i>
+                </div>
+              </div>
+              <h3 className="video-title mt-3">{video.title}</h3>
+              <p className="video-description">{video.description}</p>
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+      {/* Instagram Section */}
+<div className="container-fluid pillars-section py-5">
+  <div className="container">
+    <h2 className="section-title text-center mb-5 slide-in-bottom">Please send any gaming request through my Instagram</h2>
+    <div className="row g-4">
+      {[
+        {
+          image: "insta1.png",
+          caption: "Concept art coming to life",
+          link: "https://www.instagram.com/artimis_the_ebony_dragon?igsh=ZWFzbDJtOGFybTZ4",
+          likes: "36",
+          date: "Nov-24"
+        },
+        {
+          image: "insta2.png",
+          caption: "Studio work in progress",
+          link: "https://www.instagram.com/artimis_the_ebony_dragon?igsh=ZWFzbDJtOGFybTZ4",
+          likes: " ",
+          date: "Feb-23"
+        },
+        // Add more Instagram posts
+      ].map((post, index) => (
+        <div className="col-md-6 col-lg-4 col-xl-3" key={index}>
+          <div className="instagram-card pillar-card">
+            <a href={post.link} target="_blank" rel="noopener noreferrer" className="insta-link">
+              <div className="insta-image-container">
+                <img 
+                  src={`../images/${post.image}`} 
+                  alt={post.caption}
+                  className="insta-image"
+                />
+                <div className="insta-overlay">
+                  <div className="insta-stats">
+                    <span className="me-3"><i className="fas fa-heart me-1"></i>{post.likes}</span>
+                    <span><i className="fas fa-calendar-alt me-1"></i>{post.date}</span>
+                  </div>
+                </div>
+              </div>
+              <div className="insta-caption p-3">
+                <p>{post.caption}</p>
+                <div className="insta-cta">
+                  View on Instagram <i className="fab fa-instagram ms-2"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+        
         {/* World Building Section */}
         <div className="container-fluid origin-section py-5">
           <div className="container">

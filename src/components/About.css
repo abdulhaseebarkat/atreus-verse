@@ -1,174 +1,337 @@
 .about-screen {
-    padding-top: 80px;
-    background: linear-gradient(135deg, #1a1a1a, #2a1e17);
-    color: white;
-  }
-  
-  .gold-bar {
-    width: 150px;
-    height: 4px;
-    background: #c5a47e;
-    margin: 1rem 0;
-  }
-  
-  .pillars-section {
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-  }
-  
-  .pillar-card {
-    background: rgba(197, 164, 126, 0.1);
-    padding: 2rem;
-    border-radius: 15px;
-    position: relative;
-    transition: transform 0.3s ease;
-  }
-  
-  .pillar-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .pillar-icon {
-    font-size: 2.5rem;
-    color: #ffd700;
-    margin-bottom: 1rem;
-  }
-  
-  .pillar-number {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.5rem;
-    opacity: 0.3;
-  }
-  
-  .origin-section {
-    background: linear-gradient(45deg, #1a1a1a, #2d2d2d);
-  }
-  
-  .timeline {
-    position: relative;
-    margin: 2rem 0;
-  }
-  
-  .timeline-item {
-    padding: 1rem 0;
-    border-left: 2px solid #c5a47e;
-    position: relative;
-    padding-left: 2rem;
-    margin-left: 1rem;
-  }
-  
-  .timeline-year {
-    color: #ffd700;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+  padding-top: 80px;
+  background: linear-gradient(135deg, #1a1a1a, #2a1e17);
+  color: white;
+}
+
+.gold-bar {
+  width: 150px;
+  height: 4px;
+  background: #c5a47e;
+  margin: 1rem 0;
+}
+
+.pillars-section {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.pillar-card {
+  background: rgba(197, 164, 126, 0.1);
+  padding: 2rem;
+  border-radius: 15px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.pillar-card:hover {
+  transform: translateY(-5px);
+}
+
+.pillar-icon {
+  font-size: 2.5rem;
+  color: #ffd700;
+  margin-bottom: 1rem;
+}
+
+.pillar-number {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  opacity: 0.3;
+}
+
+.origin-section {
+  background: linear-gradient(45deg, #1a1a1a, #2d2d2d);
+}
+
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.timeline-item {
+  padding: 1rem 0;
+  border-left: 2px solid #c5a47e;
+  position: relative;
+  padding-left: 2rem;
+  margin-left: 1rem;
+}
+
+.timeline-year {
+  color: #ffd700;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.value-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+}
+
+.value-icon {
+  font-size: 2rem;
+  color: #c5a47e;
+}
+
+@media (max-width: 768px) {
+  .about-screen {
+    padding-top: 70px;
   }
   
   .value-card {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .value-icon {
-    font-size: 2rem;
-    color: #c5a47e;
-  }
-  
-  @media (max-width: 768px) {
-    .about-screen {
-      padding-top: 70px;
-    }
-    
-    .value-card {
-      flex-direction: column;
-      text-align: center;
-    }
-  }
+}
 
 
-  /* Character Card Specific Styles */
+/* Character Card Specific Styles */
 .character-card {
-    background: rgba(197, 164, 126, 0.1);
-    border-radius: 15px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
-  
-  .character-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .character-image {
-    height: 300px;
-    object-fit: cover;
-    width: 100%;
-  }
-  
-  .timeline-item {
-    border-left: 2px solid #c5a47e;
-    padding-left: 2rem;
-    margin-left: 1rem;
-    padding: 1rem 0;
-  }
+  background: rgba(197, 164, 126, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
 
-  /* News Section Styles */
+.character-card:hover {
+  transform: translateY(-5px);
+}
+
+.character-image {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.timeline-item {
+  border-left: 2px solid #c5a47e;
+  padding-left: 2rem;
+  margin-left: 1rem;
+  padding: 1rem 0;
+}
+
+/* News Section Styles */
 .news-card {
-    background: rgba(197, 164, 126, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    padding: 1.5rem;
-    transition: all 0.3s ease;
-    height: 100%;
-  }
-  
-  .news-card:hover {
-    transform: translateY(-5px);
-    background: rgba(197, 164, 126, 0.1);
-  }
-  
-  .news-date {
-    color: #c5a47e;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-  }
-  
+  background: rgba(197, 164, 126, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  background: rgba(197, 164, 126, 0.1);
+}
+
+.news-date {
+  color: #c5a47e;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.news-title {
+  color: #ffd700;
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.news-content {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+.news-link {
+  background: none;
+  border: 1px solid #c5a47e;
+  color: #c5a47e;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.news-link:hover {
+  background: #c5a47e;
+  color: #1a1a1a;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .news-title {
-    color: #ffd700;
-    font-size: 1.25rem;
-    margin: 0.5rem 0;
+    font-size: 1.1rem;
   }
   
   .news-content {
-    color: rgba(255, 255, 255, 0.8);
-    line-height: 1.6;
+    font-size: 0.9rem;
   }
-  
-  .news-link {
-    background: none;
-    border: 1px solid #c5a47e;
-    color: #c5a47e;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-  }
-  
-  .news-link:hover {
-    background: #c5a47e;
-    color: #1a1a1a;
-  }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .news-title {
-      font-size: 1.1rem;
-    }
-    
-    .news-content {
-      font-size: 0.9rem;
-    }
-  }
+}
+
+/* Instagram Section Styles */
+.instagram-card {
+position: relative;
+overflow: hidden;
+transition: transform 0.3s ease;
+border-radius: 15px;
+}
+
+.instagram-card:hover {
+transform: translateY(-5px);
+}
+
+.insta-link {
+color: white;
+text-decoration: none;
+display: block;
+}
+
+.insta-image-container {
+position: relative;
+aspect-ratio: 1;
+overflow: hidden;
+}
+
+.insta-image {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.3s ease;
+}
+
+.insta-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.8) 100%);
+opacity: 0;
+transition: opacity 0.3s ease;
+padding: 1rem;
+display: flex;
+align-items: flex-end;
+}
+
+.instagram-card:hover .insta-overlay {
+opacity: 1;
+}
+
+.insta-stats {
+width: 100%;
+color: rgba(255, 255, 255, 0.9);
+font-size: 0.9rem;
+display: flex;
+justify-content: space-between;
+}
+
+.insta-stats i {
+color: #c5a47e;
+}
+
+.insta-caption {
+background: rgba(197, 164, 126, 0.05);
+border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.insta-cta {
+color: #c5a47e;
+font-weight: 500;
+margin-top: 0.5rem;
+transition: color 0.3s ease;
+}
+
+.instagram-card:hover .insta-cta {
+color: #ffd700;
+}
+
+@media (max-width: 768px) {
+.insta-overlay {
+  opacity: 1;
+}
+
+.insta-stats {
+  font-size: 0.8rem;
+}
+}
+
+/* Video Section Styles */
+.video-card {
+position: relative;
+overflow: hidden;
+padding: 0;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 30px rgba(197, 164, 126, 0.2);
+}
+
+.video-link {
+color: white;
+text-decoration: none;
+display: block;
+height: 100%;
+}
+
+.video-thumbnail {
+position: relative;
+overflow: hidden;
+border-radius: 15px 15px 0 0;
+height: 200px;
+}
+
+.video-thumbnail img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.3s ease;
+}
+
+.video-card:hover .video-thumbnail img {
+transform: scale(1.05);
+}
+
+.play-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.4);
+display: flex;
+align-items: center;
+justify-content: center;
+opacity: 0.9;
+transition: opacity 0.3s ease;
+}
+
+.play-icon {
+font-size: 3rem;
+color: rgba(255, 255, 255, 0.9);
+text-shadow: 0 0 15px rgba(197, 164, 126, 0.5);
+transition: transform 0.3s ease;
+}
+
+.video-card:hover .play-icon {
+transform: scale(1.2);
+color: #c5a47e;
+}
+
+.video-title {
+padding: 1.5rem 1.5rem 0;
+font-size: 1.25rem;
+color: #ffd700;
+}
+
+.video-description {
+padding: 0 1.5rem 1.5rem;
+color: rgba(255, 255, 255, 0.8);
+line-height: 1.6;
+}
