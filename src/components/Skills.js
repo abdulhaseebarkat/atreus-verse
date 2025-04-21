@@ -72,22 +72,22 @@ function Skills() {
     <div className="row g-4">
       {[
         {
-          title: "World Building Masterclass",
+          title: "WWE 2K24 Muhamad Ali Vs Andre The Giant WrestleMania X",
           url: "https://youtu.be/0wuN9rGI-Qw?si=DBhIcNQ7kF8fGCH_",
           thumbnail: "video1-thumb.png",
-          description: "Discover the secrets behind our universe's creation"
+          description: "Just a Little what if match I had in mind."
         },
         {
-          title: "Character Design Deep Dive",
-          url: "https://youtu.be/0wuN9rGI-Qw?si=kiK3ZjPi7y1NY7u_",
+          title: "WWE2K Bloodline Showcase Ep # 1 Yokozuna",
+          url: "https://www.youtube.com/watch?v=xuwjU4oRtxk",
           thumbnail: "video1-thumb.png",
-          description: "From sketch to final render - full process"
+          description: "Part 1 of The Bloodlines wwe 2k Showcase..."
         },
         {
-          title: "Epic Battles & Magic",
+          title: "WWE 2k24- Hall Of Fame Fatal 4 Way Steel Cage match!",
           url: "https://youtu.be/-fwMEA_JAro?si=aT0xBk6ssIbZEOsT",
           thumbnail: "video1-thumb.png",
-          description: "Witness the clash of titans and the birth of legends",
+          description: "A little Fantasy Steel Cage Match involving Dusty rhodes taking on RVD, The Hurricane and Honkey Tonk Man in a Fatal 4 Way Steel Cage Match",
         }
         // Add more video objects
       ].map((video, index) => (
