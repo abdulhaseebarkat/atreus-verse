@@ -88,6 +88,30 @@ function Skills() {
           url: "https://youtu.be/-fwMEA_JAro?si=aT0xBk6ssIbZEOsT",
           thumbnail: "video1-thumb.png",
           description: "A little Fantasy Steel Cage Match involving Dusty rhodes taking on RVD, The Hurricane and Honkey Tonk Man in a Fatal 4 Way Steel Cage Match",
+        },
+        {
+          title: "Glamrock Mangle's Big Main Roster Return Leads to Grudge match (Universe Mode)",
+          url: "https://www.youtube.com/watch?v=za9fIP_xVvQ",
+          thumbnail: "video1-thumb.png",
+          description: "Glamrock mangle Was always entertaining to watch in in recent months."
+        },
+        {
+          title: "HuntriX (K-Pop Demon Hunters) Vs The Fyre Express (Universe Mode)",
+          url: "https://www.youtube.com/watch?v=YqDd9qcv4nM",
+          thumbnail: "video1-thumb.png",
+          description: "Alba Fyre, Isla Dawn and Nykita Lyons Have been dominating the woman's division on NXT"
+        },
+        {
+          title: "Roxanne Wolf VS Nurse Dolly NXT (Universe Mode)",
+          url: "https://www.youtube.com/watch?v=8CDpS5vgs2U",
+          thumbnail: "video1-thumb.png",
+          description: "It appears Roxanne's Self Confidence earned her another enemy."
+        },
+        {
+          title: "Glamrock Chica and Walter H Return matches on ECW (Universe Mode)",
+          url: "https://www.youtube.com/watch?v=v1y0bksjhKc",
+          thumbnail: "video1-thumb.png",
+          description: "On ECW's Return show, The son of Triple H and Stephanie, Walter H, steps away from his corporate roll"
         }
         // Add more video objects
       ].map((video, index) => (
